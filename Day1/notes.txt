@@ -1,0 +1,27 @@
+1.) What is Emmet?(Expressive Meta-Markup Language)
+- It is plugin that can be used to write our html and css code more faster using some shortcuts.like ul>li*3 ,will create a ul with 3 li's.
+
+2.) What is React?
+- A js library for building user interfaces.we can inject React in our code with bare minimum thing.
+
+3.) What is CDN?
+- cdn stands for content delivery network.it is network of geographically distributed servers ,which deliver web content to users geographically.like web pages,images etc.
+
+4.) What is CrossOrigin ?
+- it is used to share the resources from one domain to another domain .it is used to handle the cors request.it checks if it is safe to share resource from other domains. resources are media,imgs etc.
+CORS-cross origin resource sharing.it is mech by which one webpage req to another domain for fetching out the resources without leaking their credentials info.
+
+5.) What is React Element?
+- its an object and act as html tag. 
+
+6.) .render
+- Its override the original content in html file
+
+7.) What is difference between react.development.js and react.production.js files via CDN?
+- in production mode compression or minification of js code is required to improvve the performance of page.
+
+8.) What is async and defer?
+- Async: HTML parsing and simultaneously the script tag gets fetch from network and when the script tag completes loading then its gets executes and html parsing stops for few time.then html parsing happens. it is used when order of execution doesn't matter.
+
+Await: Its parse html and fetch script from network simultaneously .and when html parsing is finished then only script executes.
+
