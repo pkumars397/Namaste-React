@@ -1,0 +1,75 @@
+
+1.) What is `NPM`?
+- Its free open source repo of tools for devlopers to builds applications ,when we build our app ,so it is not in production ready .so we need some packages to minify our code .install different packages using npm ,that we need for optimizing the performance of our app.
+
+2.) What is `Parcel/Webpack`? Why do we need it?
+-  both are bundlers used in js or typescript. it helps in minifying our code and cleaning the code ,which ultimately improve the performance of our app.
+-Parcel ,its beginner friendly and easy to use.and it is faster than webpack. 
+- Webpack suitable for complex projects.large feature set.
+-Bundler makes our app faster by saving resources .means only needed code is loaded.and loading the modules which is required.
+
+
+3.) What is `.parcel-cache`
+- stores information about your project when parcel builds it, so that when it rebuilds, it doesn't have to re-parse and re-analyze everything from scratch. It's a key reason why parcel can be so fast in development mode.
+
+4.) What is `npx` ?
+-node package execute ,its execute our packages.
+
+
+5.) What is difference between `dependencies` vs `devDependencies`
+- dependencies are essential packages that are required for a project's runtime.(usually end up in the production code)
+- DevDependencies are packages that are needed during development but not for production.
+
+6.) What is Tree Shaking?
+-Tree shaking is a method of removing unused code from a production build. It's also known as dead code elimination. 
+
+7.) What is Hot Module Replacement?
+- HMR is a feature of Webpack. It allows developers to update code in a running app without rebuilding it
+
+8.) List down your favourite 5 superpowers of Parcel and describe any 3 of them in your
+  own words.
+- HMR,File tracker algo,minify ,cleaning the code,image optimization
+HMR- allow to modify our code in running app without rebuilding again
+Minify ,it minify our code in production
+cleaning the code- removes unneccesary console.log and all.
+
+9.) What is `.gitignore`? What should we add and not add into it?
+- we put all the files name inside .gitignore which is not being tracked and updated to github.
+A .gitignore file contains a list of all the specified files and folders from the project that Git should ignore and not track.
+
+9.)  What is the difference between `package.json` and `package-lock.json`
+- its contains the meta data about project and functional dependencies which is used in project into the package.json 
+- when a package is install its,lock the version of that dependencies.
+
+10.) Why should I not modify `package-lock.json`?
+- The package-lock.json file keeps track of the exact version of every package installed. 
+
+11.) What is `node_modules` ? Is it a good idea to push that on git?
+- It is generally not a good idea to push the node_modules folder to Git. This is because the folder can be very large.
+- it contains all the modules that are installed for project.
+
+12.) What is the `dist` folder?
+- it is short form of distributed folder,when we run npx command ,then it is created with minified version of our app code.
+
+13.) What is `browserlists`
+- a configuration file that determines which browsers your project should support.
+
+14.) dif bundlers: vite, webpack, parcel
+-
+
+15.)about: ^ - caret and ~ - tilda
+- Using tilde ( ~ ) gives you bug-fix releases, while caret ( ^ ) in addition gives you backward-compatible new functionality
+
+16.)Read about Script types in html (MDN Docs)
+-done 
+
+
+17.) What is parcel ?
+- it is bundler, which bundle the files in minified form.
+
+18.) What is parcel cache and dist ?
+- Its uses cache memory to store the dev files and again when we modify the files and then the parcel will reload at faster .and dist is place where it stores the compressed hashed files .
+
+19.) Should we put parcel-cache in gitignore?
+- yess we should put parcel-cache in gitignore.(anything we generate on server ,put in gitignore)
+
