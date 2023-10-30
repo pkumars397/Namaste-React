@@ -73,3 +73,4 @@ A .gitignore file contains a list of all the specified files and folders from th
 19.) Should we put parcel-cache in gitignore?
 - yess we should put parcel-cache in gitignore.(anything we generate on server ,put in gitignore)
 
+<script type="module" src="app.js"></script>

@@ -1,0 +1,46 @@
+- Our Modern Js code converted into older js for supporting various older browser is called pollyfill.
+- This conversion thing done by a package called a Babel,node module.
+
+1.)npx == npm run 
+- we can make short hand in our package.json for runing our project.
+-inside script object in the package.json.
+
+2.) how to remove the console.log() 
+- Parcel doesn't remove the console.log()
+- we have to install a plugin called,babel-plugin-transform-remove-console
+- it will not apply to our project directly ,we have to configure it ,using .babelrc.
+
+3.) Rendering
+- updating our dom using React
+
+4.) Why keys in props
+- becoz it optimize the speed of rending.
+- otherwise it will load entire container then insert new element.
+- React tracks of key and so its mandatory to give key to our React Elements.
+
+5.) What is difference between HTML and JSX ?
+- 
+
+6.) What is Babel ?
+- Takes some piece of code and give another code which is suitable for other environment.
+
+7.) how to create different tags in JSX i.e Images and all 
+- 
+
+8.) JSX advantage
+- Readibality
+- Maintainability
+- 2 package-lock ,for maintaining the dependencies version.
+
+9.) Functional Component
+- Name start with Capital letter recommanded way.
+- normal function just returning JSX,or React Element.
+
+10.) Role of type attribute in script tag? What options can I use there?
+- the type attribute in the <script> tag specifies the scripting language or media type of the script code contained within the tag. It helps the browser understand how to interpret and execute the script. The type attribute is optional, and if not specified, it defaults to "text/javascript".
+
+11.) {TitleComponent} vs {<TitleComponent/>} vs {<TitleComponent></TitleComponent>} in JSX
+- In JSX, the use of {} is a way to embed JavaScript expressions or components within your JSX code
+- for embedding the JSX using {},and for component it is </>
+
+
