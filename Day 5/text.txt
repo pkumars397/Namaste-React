@@ -1,0 +1,52 @@
+1.) JSX can have at most one parent.
+-- if don't want a parent ,then there comes React.Fragment component. so we use it.it behaves like empty tag.
+
+-- Using <React.Fragment></React.Fragment> shorthand <></>
+
+2.) Giving styling in React 
+- as we can write any js code inside the {};
+- so styling done using {{key:value}},or {obj},obj is object we defined earlier.
+
+3.) Is JSX mandatory for React?
+- No Jsx is not mandatory at all , but it is recommanded to use jsx ,because it is js syntax extension to write the html code inside our js file to build different React components of our UI and render them easily . it is more readable and maintainable also.
+
+4.) Is ES6 mandatory for React?
+- ES6 (ECMAScript 2015) is not mandatory for using React, but it is highly recommended and widely used in the React ecosystem.React itself is a JavaScript library, and it can be used with various versions of JavaScript, including ES5. However React is more enjoable and productive using ES6 and later on versions ,because of the features they offer ,like spread operator,class,template literals,let const, arrow funtion.
+
+5.) How can I write comments in JSX?
+- Using {/* */}
+
+6.) What is <React.Fragment></React.Fragment> and <></> ?
+- IN JSX can atmost have one parent element,so if siblings are there only in our jsx ,so we need to add the div for making a parent.
+- React.Fragment help to add parent and without appearing in our DOM Tree.Useful where multiple React elements are there and no parent around them ,so we need to add parent around them.
+
+7.) What is Virtual DOM?
+- It is a programming concept used to optimize the updating of the actual (real) DOM in web applications.
+- Real DOM : The Document Object Model (DOM) is a tree-like representation of the structure and content of a web page4
+- Virtual DOM: The Virtual DOM is an in-memory representation of the real DOM. It's a lightweight copy of the real DOM tree, containing the same structure and content. When there's a change in a web application (for example, when the state of a React component changes), a new Virtual DOM tree is created by copying the entire DOM structure.
+
+8.) What is Reconciliation in React?
+- Once the Virtual DOM is updated, it can be compared to the previous Virtual DOM snapshot using a process called "reconciliation." This involves determining the difference (diffing) between the previous and current Virtual DOM trees to identify what has changed.
+- After identifying the differences, the Virtual DOM calculates the minimum number of manipulations required to update the real DOM to match the current Virtual DOM.
+- Finally, the Virtual DOM applies these minimal updates to the real DOM. Since the Virtual DOM is a lightweight in-memory representation, it's much faster to perform these operations on it than directly on the actual DOM.
+
+9.) What is React Fiber?
+- React Fiber is a complete reimplementation of the React core algorithm, designed to improve the performance and responsiveness of React applications. 
+- Fiber allows React to split its rendering work into smaller units called "fiber" and prioritize and schedule them more efficiently. This means that React can be more responsive to user interactions, animations, and other high-priority tasks.
+
+10.) Why we need keys in React? When do we need keys in React?
+- In React, keys are used to uniquely identify and associate elements in a list or iterable within your components.
+- are used to help React understand which items have changed, been added, or been removed in a list of elements.
+- it makes our real dom updation faster withour re rendering entire components.
+
+11.) Can we use index as keys in React?
+- it can used but it is not recommandeded. because it leads to some errors. only use in emergency.
+
+12.) What is props in React? Ways to
+- In React, "props" is short for "properties," and it's a mechanism for passing data from a parent component to a child component.
+- they enable you to create dynamic and reusable components
+-  You can pass various types of data to child components through props, including values, functions, and even other components.
+- we can call our function component using props as argument.so basically form parent component we passing the argument as props into our child component.
+
+13.)What is a Config Driven UI ?
+-  Config-Driven UI (User Interface) is a design and development approach where the configuration of the user interface is separate from the underlying code. Instead of hardcoding the layout, behavior, and appearance of a user interface, a Config-Driven UI relies on external configuration files or data structures to define how the UI should look and behave. 
